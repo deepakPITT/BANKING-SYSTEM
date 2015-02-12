@@ -1,0 +1,25 @@
+-------Banking System DataBase------
+
+CREATE TABLE personal_details
+(
+accNo NUMBER(10) primary key,
+name VARCHAR2(50) not null,
+mname VARCHAR2(50),
+lname VARCHAR2(50) not null,
+gender VARCHAR2(1),
+fname VARCHAR2(200) not null,
+address VARCHAR2(500),
+nationality VARCHAR2(50) not null,
+age NUMBER(3),
+phone_no NUMBER(10) not null
+)
+
+
+CREATE TABLE account_details
+(
+accNo NUMBER(10) primary key,
+acc_type VARCHAR2(10) not null,
+pan_no VARCHAR2(20) not null,
+id VARCHAR2(20) not null,
+balance NUMBER(20) not null
+)
